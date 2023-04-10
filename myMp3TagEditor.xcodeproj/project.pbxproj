@@ -14,6 +14,12 @@
 		EFD0D3B929E2E93D002C7D98 /* myMp3TagEditorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFD0D3B829E2E93D002C7D98 /* myMp3TagEditorTests.swift */; };
 		EFD0D3C329E2E93E002C7D98 /* myMp3TagEditorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFD0D3C229E2E93E002C7D98 /* myMp3TagEditorUITests.swift */; };
 		EFD0D3C529E2E93E002C7D98 /* myMp3TagEditorUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFD0D3C429E2E93E002C7D98 /* myMp3TagEditorUITestsLaunchTests.swift */; };
+		EFD0D3D529E2E98F002C7D98 /* read.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFD0D3D129E2E98F002C7D98 /* read.swift */; };
+		EFD0D3D629E2E98F002C7D98 /* info.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFD0D3D229E2E98F002C7D98 /* info.swift */; };
+		EFD0D3D729E2E98F002C7D98 /* write.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFD0D3D329E2E98F002C7D98 /* write.swift */; };
+		EFD0D3DC29E2E9F0002C7D98 /* ID3TagEditor in Frameworks */ = {isa = PBXBuildFile; productRef = EFD0D3DB29E2E9F0002C7D98 /* ID3TagEditor */; };
+		EFD0D3E029E2EA7E002C7D98 /* test.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFD0D3DF29E2EA7E002C7D98 /* test.swift */; };
+		EFD0D3E429E2EC54002C7D98 /* readDIR.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFD0D3E329E2EC54002C7D98 /* readDIR.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +51,11 @@
 		EFD0D3BE29E2E93E002C7D98 /* myMp3TagEditorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = myMp3TagEditorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFD0D3C229E2E93E002C7D98 /* myMp3TagEditorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = myMp3TagEditorUITests.swift; sourceTree = "<group>"; };
 		EFD0D3C429E2E93E002C7D98 /* myMp3TagEditorUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = myMp3TagEditorUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		EFD0D3D129E2E98F002C7D98 /* read.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = read.swift; sourceTree = "<group>"; };
+		EFD0D3D229E2E98F002C7D98 /* info.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = info.swift; sourceTree = "<group>"; };
+		EFD0D3D329E2E98F002C7D98 /* write.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = write.swift; sourceTree = "<group>"; };
+		EFD0D3DF29E2EA7E002C7D98 /* test.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = test.swift; sourceTree = "<group>"; };
+		EFD0D3E329E2EC54002C7D98 /* readDIR.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = readDIR.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EFD0D3DC29E2E9F0002C7D98 /* ID3TagEditor in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,6 +87,7 @@
 		EFD0D39A29E2E93D002C7D98 = {
 			isa = PBXGroup;
 			children = (
+				EFD0D3D929E2E996002C7D98 /* ID3Edit */,
 				EFD0D3A529E2E93D002C7D98 /* myMp3TagEditor */,
 				EFD0D3B729E2E93D002C7D98 /* myMp3TagEditorTests */,
 				EFD0D3C129E2E93E002C7D98 /* myMp3TagEditorUITests */,
@@ -129,6 +142,18 @@
 			path = myMp3TagEditorUITests;
 			sourceTree = "<group>";
 		};
+		EFD0D3D929E2E996002C7D98 /* ID3Edit */ = {
+			isa = PBXGroup;
+			children = (
+				EFD0D3D129E2E98F002C7D98 /* read.swift */,
+				EFD0D3D329E2E98F002C7D98 /* write.swift */,
+				EFD0D3DF29E2EA7E002C7D98 /* test.swift */,
+				EFD0D3D229E2E98F002C7D98 /* info.swift */,
+				EFD0D3E329E2EC54002C7D98 /* readDIR.swift */,
+			);
+			path = ID3Edit;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -145,6 +170,9 @@
 			dependencies = (
 			);
 			name = myMp3TagEditor;
+			packageProductDependencies = (
+				EFD0D3DB29E2E9F0002C7D98 /* ID3TagEditor */,
+			);
 			productName = myMp3TagEditor;
 			productReference = EFD0D3A329E2E93D002C7D98 /* myMp3TagEditor.app */;
 			productType = "com.apple.product-type.application";
@@ -217,6 +245,9 @@
 				Base,
 			);
 			mainGroup = EFD0D39A29E2E93D002C7D98;
+			packageReferences = (
+				EFD0D3DA29E2E9F0002C7D98 /* XCRemoteSwiftPackageReference "ID3TagEditor" */,
+			);
 			productRefGroup = EFD0D3A429E2E93D002C7D98 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -260,6 +291,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				EFD0D3A929E2E93D002C7D98 /* ContentView.swift in Sources */,
+				EFD0D3E029E2EA7E002C7D98 /* test.swift in Sources */,
+				EFD0D3D629E2E98F002C7D98 /* info.swift in Sources */,
+				EFD0D3E429E2EC54002C7D98 /* readDIR.swift in Sources */,
+				EFD0D3D529E2E98F002C7D98 /* read.swift in Sources */,
+				EFD0D3D729E2E98F002C7D98 /* write.swift in Sources */,
 				EFD0D3A729E2E93D002C7D98 /* myMp3TagEditorApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -416,10 +452,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = myMp3TagEditor/myMp3TagEditor.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"myMp3TagEditor/Preview Content\"";
+				DEVELOPMENT_TEAM = QG5ATR69H9;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
@@ -430,6 +468,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = esctabcapslock.myMp3TagEditor;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 			};
@@ -441,10 +480,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = myMp3TagEditor/myMp3TagEditor.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"myMp3TagEditor/Preview Content\"";
+				DEVELOPMENT_TEAM = QG5ATR69H9;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
@@ -455,6 +496,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = esctabcapslock.myMp3TagEditor;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 			};
@@ -568,6 +610,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		EFD0D3DA29E2E9F0002C7D98 /* XCRemoteSwiftPackageReference "ID3TagEditor" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/chicio/ID3TagEditor.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		EFD0D3DB29E2E9F0002C7D98 /* ID3TagEditor */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EFD0D3DA29E2E9F0002C7D98 /* XCRemoteSwiftPackageReference "ID3TagEditor" */;
+			productName = ID3TagEditor;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = EFD0D39B29E2E93D002C7D98 /* Project object */;
 }

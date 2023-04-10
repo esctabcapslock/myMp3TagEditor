@@ -2,7 +2,7 @@
 //  myMp3TagEditorApp.swift
 //  myMp3TagEditor
 //
-//  Created by zffridption on 2023. 4. 9..
+//  Created by * on 2023. 4. 9..
 //
 
 import SwiftUI
